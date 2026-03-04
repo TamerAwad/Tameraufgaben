@@ -1,0 +1,7 @@
+C:\Users\AwadTamer\Documents\Tameraufgaben\TamerInventoryProject\TamerInventoryProject\obj\Debug\TamerInventoryProject.csproj.AssemblyReference.cache
+C:\Users\AwadTamer\Documents\Tameraufgaben\TamerInventoryProject\TamerInventoryProject\obj\Debug\TamerInventoryProject.csproj.CoreCompileInputs.cache
+C:\Users\AwadTamer\Documents\Tameraufgaben\TamerInventoryProject\TamerInventoryProject\bin\Debug\TamerInventoryProject.exe.config
+C:\Users\AwadTamer\Documents\Tameraufgaben\TamerInventoryProject\TamerInventoryProject\bin\Debug\TamerInventoryProject.exe
+C:\Users\AwadTamer\Documents\Tameraufgaben\TamerInventoryProject\TamerInventoryProject\bin\Debug\TamerInventoryProject.pdb
+C:\Users\AwadTamer\Documents\Tameraufgaben\TamerInventoryProject\TamerInventoryProject\obj\Debug\TamerInventoryProject.exe
+C:\Users\AwadTamer\Documents\Tameraufgaben\TamerInventoryProject\TamerInventoryProject\obj\Debug\TamerInventoryProject.pdb
