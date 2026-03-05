@@ -6,7 +6,7 @@ namespace TamerInventoryProject
     {
         static void Main(string[] args)
         {
-            string[] productName = new string[50];
+            string[] productNames = new string[50];
             int[] productQuantities = new int[50];
             int productCount = 0;
             bool running = true;
@@ -27,6 +27,23 @@ namespace TamerInventoryProject
                         break;
                     case "2":
                         Console.WriteLine("\nAdding a new product...");
+                        if (productCount < 50)
+                        {
+                            Console.WriteLine("Enter prduct name: ");
+                            productNames[productCount] = Console.ReadLine();
+
+                            Console.Write("Enter quantity: ");
+                            productQuantities[productCount] = Convert.ToInt32(Console.ReadLine());
+
+                            productCount++;
+                            Console.WriteLine("Product added successfully!");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Inventory is full !");
+                       
+                        
+                        }
                         break;
                     case "3":
                         running = false;
@@ -39,6 +56,8 @@ namespace TamerInventoryProject
                 {
                     Console.WriteLine("\nPress Enter to continue...");
                     Console.WriteLine();
+
+
                 }
             }
         }

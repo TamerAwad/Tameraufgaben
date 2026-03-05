@@ -5,3 +5,4 @@ C:\Users\AwadTamer\Documents\Tameraufgaben\TamerInventoryProject\TamerInventoryP
 C:\Users\AwadTamer\Documents\Tameraufgaben\TamerInventoryProject\TamerInventoryProject\bin\Debug\TamerInventoryProject.pdb
 C:\Users\AwadTamer\Documents\Tameraufgaben\TamerInventoryProject\TamerInventoryProject\obj\Debug\TamerInventoryProject.exe
 C:\Users\AwadTamer\Documents\Tameraufgaben\TamerInventoryProject\TamerInventoryProject\obj\Debug\TamerInventoryProject.pdb
+C:\Users\AwadTamer\Documents\Tameraufgaben\TamerInventoryProject\TamerInventoryProject\obj\Debug\TamerInventoryProject.exe.config

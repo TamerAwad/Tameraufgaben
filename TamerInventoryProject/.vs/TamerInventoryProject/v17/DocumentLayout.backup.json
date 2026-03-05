@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "TamerInventoryProject\\Program.cs",
               "ToolTip": "C:\\Users\\AwadTamer\\Documents\\Tameraufgaben\\TamerInventoryProject\\TamerInventoryProject\\Program.cs",
               "RelativeToolTip": "TamerInventoryProject\\Program.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAqwDAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAACQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-04T13:07:56.262Z",
               "EditorCaption": ""
@@ -51,10 +51,6 @@
           "DockedHeight": 200,
           "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{6d4078d1-5951-4ed1-ac0e-0a8099c1cce5}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
