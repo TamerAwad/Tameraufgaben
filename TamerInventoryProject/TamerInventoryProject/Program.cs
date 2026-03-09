@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO; // مضافة للتعامل مع الملفات
 
 namespace TamerInventoryProject
 {
@@ -10,6 +11,23 @@ namespace TamerInventoryProject
             string[] productNames = new string[50];
             int[] productQuantities = new int[50];
             int productCount = 0;
+            string filePath = "inventory.txt";
+            // --- LOAD DATA ON STARTUP ---
+            if (File.Exists(filePath))
+            {
+                string[] lines = File.ReadAllLines(filePath);
+                foreach (string line in lines)
+                {
+                    if (productCount < 50)
+                    {
+                        string[] parts = line.Split(',');
+                        productNames[productCount] = parts[0];
+                        productQuantities[productCount] = int.Parse(parts[1]);
+                        productCount++;
+                    }
+                }
+            }
+
             bool running = true;
 
             while (running)
@@ -18,7 +36,7 @@ namespace TamerInventoryProject
                 Console.WriteLine("=== Tamer Inventory Management System ===");
                 Console.WriteLine("1. Show All Products");
                 Console.WriteLine("2. Add New Product");
-                Console.WriteLine("3. Exit");
+                Console.WriteLine("3. Save and Exit"); 
                 Console.WriteLine("4. Search for a Product");
                 Console.Write("\nSelect an option: ");
 
@@ -50,7 +68,6 @@ namespace TamerInventoryProject
                             Console.Write("Enter product name: ");
                             productNames[productCount] = Console.ReadLine();
 
-                            // Secure quantity input
                             bool validQty = false;
                             while (!validQty)
                             {
@@ -62,10 +79,9 @@ namespace TamerInventoryProject
                                 }
                                 else
                                 {
-                                    Console.WriteLine("Invalid input! Please enter a number for quantity.");
+                                    Console.WriteLine("Invalid input! Please enter a number.");
                                 }
                             }
-
                             productCount++;
                             Console.WriteLine("\nProduct added successfully!");
                         }
@@ -75,8 +91,16 @@ namespace TamerInventoryProject
                         }
                         break;
 
-                    case "3": // Exit
-                        Console.WriteLine("Exiting the program... Goodbye!");
+                    case "3": // Save and Exit
+                        // --- SAVE DATA TO FILE ---
+                        using (StreamWriter sw = new StreamWriter(filePath))
+                        {
+                            for (int i = 0; i < productCount; i++)
+                            {
+                                sw.WriteLine($"{productNames[i]},{productQuantities[i]}");
+                            }
+                        }
+                        Console.WriteLine("Data saved successfully. Goodbye!");
                         running = false;
                         break;
 
@@ -102,11 +126,7 @@ namespace TamerInventoryProject
                                     break;
                                 }
                             }
-
-                            if (!found)
-                            {
-                                Console.WriteLine("\nProduct not found.");
-                            }
+                            if (!found) Console.WriteLine("\nProduct not found.");
                         }
                         break;
 
@@ -115,7 +135,6 @@ namespace TamerInventoryProject
                         break;
                 }
 
-                // Pause the screen before clearing for the next loop
                 if (running)
                 {
                     Console.WriteLine("\nPress Enter to return to Menu...");
