@@ -1,10 +1,13 @@
-# Tamer Inventory Management System 
+# Tamer Inventory System 
+A simple and efficient C# console application for managing product inventory. 
  
-## Final Project Status 
-- **Language:** C# (Console Application) 
-- **Storage:** Automatic Save/Load using `inventory.txt` (System.IO) 
-- **Validation:** Robust input handling with `int.TryParse` 
-- **Features:** Show All, Add New, Search (Case-Insensitive), and Persistent Storage. 
+## Key Features 
+- **Array Management**: Uses synchronized arrays to store up to 50 products. 
+- **User Interface**: Clean console menu for easy navigation. 
+- **Real-time Tracking**: Uses a `productCount` logic to manage active entries. 
  
-## Repository Link 
-[https://github.com/TamerAwad/Tameraufgaben](https://github.com/TamerAwad/Tameraufgaben) 
+## How to Use 
+1. Run the application. 
+2. Select Option 2 to add a new product and quantity. 
+3. Select Option 1 to view all currently stored products. 
+4. Select Option 3 to exit the program. 
